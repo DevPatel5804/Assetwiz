@@ -1,0 +1,6 @@
+@Assetwiz_Contact_HostAddress = http://localhost:5265
+
+GET {{Assetwiz_Contact_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Assetwiz_Contact.props" />
+</Project>

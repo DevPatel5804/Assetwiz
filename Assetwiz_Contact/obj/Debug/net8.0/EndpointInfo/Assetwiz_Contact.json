@@ -1,0 +1,1040 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Assetwiz_Contact",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Contact/GetAllContacts": {
+      "get": {
+        "tags": [
+          "Contact"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contact/GetContactById/{id}": {
+      "get": {
+        "tags": [
+          "Contact"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contact/AddContact": {
+      "post": {
+        "tags": [
+          "Contact"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contact/UpdateContact/{id}": {
+      "put": {
+        "tags": [
+          "Contact"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contact/DeleteContact/{id}": {
+      "delete": {
+        "tags": [
+          "Contact"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactFiles/GetAllContactFiles": {
+      "get": {
+        "tags": [
+          "ContactFiles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactFiles/GetContactFileById/{id}": {
+      "get": {
+        "tags": [
+          "ContactFiles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactFiles/AddContactFile": {
+      "post": {
+        "tags": [
+          "ContactFiles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactFilesViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactFilesViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactFilesViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactFiles/UpdateContactFile/{id}": {
+      "put": {
+        "tags": [
+          "ContactFiles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactFilesViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactFilesViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactFilesViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactFiles/DeleteContactFile/{id}": {
+      "delete": {
+        "tags": [
+          "ContactFiles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactPerson/GetAllContactPerson": {
+      "get": {
+        "tags": [
+          "ContactPerson"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactPerson/GetContactPersonById/{id}": {
+      "get": {
+        "tags": [
+          "ContactPerson"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactPerson/AddContactPerson": {
+      "post": {
+        "tags": [
+          "ContactPerson"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactPersonViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactPersonViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactPersonViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactPerson/UpdateContactPerson/{id}": {
+      "put": {
+        "tags": [
+          "ContactPerson"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactPersonViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactPersonViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactPersonViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ContactPerson/DeleteContactPerson/{id}": {
+      "delete": {
+        "tags": [
+          "ContactPerson"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Schedulers/GetAllScheduler": {
+      "get": {
+        "tags": [
+          "Schedulers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Schedulers/GetSchedulerById/{id}": {
+      "get": {
+        "tags": [
+          "Schedulers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Schedulers/AddScheduler": {
+      "post": {
+        "tags": [
+          "Schedulers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SchedulersViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SchedulersViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SchedulersViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Schedulers/UpdateScheduler/{id}": {
+      "put": {
+        "tags": [
+          "Schedulers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SchedulersViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SchedulersViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SchedulersViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Schedulers/DeleteScheduler/{id}": {
+      "delete": {
+        "tags": [
+          "Schedulers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ContactFilesViewModel": {
+        "required": [
+          "contactFileExtention",
+          "contactFileName",
+          "contactFilePath",
+          "contactID",
+          "createdOn",
+          "modifiedOn"
+        ],
+        "type": "object",
+        "properties": {
+          "contactFilesID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "contactID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "contact": {
+            "$ref": "#/components/schemas/ContactViewModel"
+          },
+          "contactPersonID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "contactFileName": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          },
+          "contactFilePath": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          },
+          "contactFileExtention": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "storageProviderName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "locationID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "locationName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "assignedUserTo": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "assignedUserName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "assignedUserEmail": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdByName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "modifiedByName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContactPersonViewModel": {
+        "required": [
+          "createdOn",
+          "modifiedOn",
+          "personName"
+        ],
+        "type": "object",
+        "properties": {
+          "contactPersonID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "contactID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "contact": {
+            "$ref": "#/components/schemas/ContactViewModel"
+          },
+          "personName": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "mobile": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "isEnabled": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "address": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "zipCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "country": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "locationID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "locationName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "createdOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdByName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "modifiedByName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContactViewModel": {
+        "required": [
+          "companyName",
+          "contactTypeName",
+          "createdOn",
+          "locationID",
+          "modifiedOn",
+          "otherInformation"
+        ],
+        "type": "object",
+        "properties": {
+          "contactID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "contactTypeID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "contactTypeName": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          },
+          "locationID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "locationName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "companyName": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "mobile": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "zipCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "stateCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "country": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "isEnabled": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "panNo": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "gstin": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "cin": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "paymentTerms": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "roundingPrecision": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "externalReferenceID": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "otherInformation": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "createdOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdByName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "modifiedByName": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SchedulersViewModel": {
+        "type": "object",
+        "properties": {
+          "schedulerID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "schedulerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "otherInformation": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "createdByName": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "modifiedByName": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedOn": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
