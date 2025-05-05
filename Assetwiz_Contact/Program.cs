@@ -23,6 +23,10 @@ builder.Services.AddScoped<SchedulerConfigBusinessObject>();
 
 builder.Services.AddScoped<LocationBusinessObject>();
 
+builder.Services.AddScoped<GroupBusinessObject>();
+
+builder.Services.AddScoped<ProductTransactionBusinessObject>();
+
 builder.Services.AddScoped<LocationConfigBusinessObject>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
