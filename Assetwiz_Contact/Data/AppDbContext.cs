@@ -18,6 +18,9 @@ namespace Assetwiz_Contact.Data
         public DbSet<Assetwiz_Contact.ViewModels.ContactFilesViewModel> ContactFiles { get; set; }
 
         public DbSet<Assetwiz_Contact.ViewModels.SchedulersViewModel> Scheduler { get; set; }
+         public DbSet<Assetwiz_Contact.ViewModels.SchedulerConfigViewModel> SchedulerConfig { get; set; }
+         public DbSet<Assetwiz_Contact.ViewModels.LocationViewModel> Location { get; set; }
+         public DbSet<Assetwiz_Contact.ViewModels.LocationConfigViewModel> LocationConfig { get; set; }
 
     }
 }
