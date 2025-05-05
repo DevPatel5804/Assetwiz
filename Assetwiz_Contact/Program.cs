@@ -19,6 +19,11 @@ builder.Services.AddScoped<ContactPersonBusinessObject>();
 builder.Services.AddScoped<SchedulerBusinessObject>();
 
 builder.Services.AddScoped<ContactFilesBusinessObject>();
+builder.Services.AddScoped<SchedulerConfigBusinessObject>();
+
+builder.Services.AddScoped<LocationBusinessObject>();
+
+builder.Services.AddScoped<LocationConfigBusinessObject>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
