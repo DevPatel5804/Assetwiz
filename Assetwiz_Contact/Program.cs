@@ -28,6 +28,9 @@ builder.Services.AddScoped<GroupBusinessObject>();
 builder.Services.AddScoped<ProductTransactionBusinessObject>();
 
 builder.Services.AddScoped<LocationConfigBusinessObject>();
+builder.Services.AddScoped<StepsBusinessObject>();
+builder.Services.AddScoped<MeterBusinessObject>();
+builder.Services.AddScoped<MeterLogsBusinessObject>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
