@@ -22,6 +22,9 @@ namespace Assetwiz_Contact.Data
          public DbSet<Assetwiz_Contact.ViewModels.LocationViewModel> Location { get; set; }
          public DbSet<Assetwiz_Contact.ViewModels.LocationConfigViewModel> LocationConfig { get; set; }
          public DbSet<Assetwiz_Contact.ViewModels.GroupConfigViewModel> Groups { get; set; }
+         public DbSet<Assetwiz_Contact.ViewModels.StepsViewModel> Steps { get; set; }
+         public DbSet<Assetwiz_Contact.ViewModels.MeterViewModel> Meter { get; set; }
+         public DbSet<Assetwiz_Contact.ViewModels.MeterLogsViewModel> MeterLogs { get; set; }
 
          public DbSet<Assetwiz_Contact.ViewModels.ProductTransactionConfigViewModel> ProductTransaction { get; set; }
          
